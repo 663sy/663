@@ -57,7 +57,7 @@ const cityMatrix = {
     },
     kyoto: { 
         name: "京都 (Kyoto)", P: 3, I: 9, W: 6, C: 10, 
-        img: "kyo.jpg",
+        img: "koy.jpg",
         desc: "【古老岁月的完美凝固与极致克制的东方美学】\n\n京都拥有无与伦比的古代历史沉淀与侘寂风的建筑肌理。在这里，漫长的历史不是博物馆里的展品，而是触手可及的日常生活。城市节奏缓慢，大片古迹与自然水系交融，散发着沉静的文化气场。\n\n需要注意的是，这里的便利度无法与一线都会相比，日常出行依赖自行车与公交。同时，京都维持着一种极致克制、相敬如宾但也相对排外的隐形人际边界。它适合那些内心极度丰盈、追求绝对安静与古典审美的隐士。" 
     },
     bangkok: { 
@@ -408,9 +408,9 @@ for (const dim in userProfile) {
     
     // 1. 渲染主城市
     const cityImg = document.createElement('img');
-cityImg.src = topCity.img;
-cityImg.style.cssText = 'width:100%; height:200px; object-fit:cover; border-radius:12px; margin-bottom:20px;';
-document.getElementById('result-screen').insertBefore(cityImg, document.getElementById('result-city-name'));
+        cityImg.src = topCity.img;
+        cityImg.style.cssText = 'width:100%; height:200px; object-fit:cover; border-radius:12px; margin-bottom:20px;';
+        document.getElementById('result-screen').insertBefore(cityImg, document.getElementById('result-city-name'));
     document.getElementById('result-city-name').textContent = `${topCity.name} (匹配度：${topCity.match}%)`;
     document.getElementById('result-description').textContent = topCity.desc;
 
