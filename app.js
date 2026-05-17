@@ -394,6 +394,7 @@ for (const dim in userProfile) {
             id: cityKey,
             name: city.name,
             desc: city.desc,
+            img: city.img,
             match: matchPercentage
         });
     }
